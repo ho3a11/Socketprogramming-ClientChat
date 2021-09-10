@@ -1,3 +1,3 @@
 # Socket-programming-Client-Chat
-This is a LAN chat application with TCP/IP socket programming technology in C#
-used DevComponents.DotNetBar2
+DevComponents.DotNetBar2 used in project
+also downlod server-chat for use this project (# Socket-programming-Server-Chat in my repositories)

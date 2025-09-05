@@ -1,40 +1,35 @@
-Socket Programming - Client Chat This project is a simple chat application built using Socket Programming in Python. It includes a server and a client that communicate over a network, allowing multiple clients to connect to the server simultaneously and chat with each other.
+# Client Chat Application (C# WinForms)
+
+This project is a simple client-side chat application built using C# and Windows Forms. It connects to a server, sends messages, and receives messages from other clients connected to the same server.
 
 ## Features
 
-*   Client-Server Architecture: A central server that manages all communication.
-*   Multi-Client Support: The ability for multiple users to connect at the same time.
-*   TCP Protocol: Uses the TCP protocol for reliable, connection-oriented communication.
+*   **Client-Server Architecture:** Connects to a central server that manages all communication.
+*   **TCP Protocol:** Uses the TCP protocol for reliable, connection-oriented communication.
+*   **User Interface:** A simple WinForms UI for entering server IP/Port, connecting, sending messages, and displaying chat history.
 
 ## Prerequisites
 
-*   Python 3.x: Ensure that Python 3 is installed on your system.
+*   **.NET Framework:** Ensure you have the .NET Framework (e.NET Core) installed on your system. This project was likely built with a specific version of .NET Framework compatible with Windows Forms.
+*   **Visual Studio:** Recommended for opening, building, and running the project.
 
 ## How to Run
 
-To run this application, you must first start the server and then the clients.
+To run this application, you must first have a compatible chat server running. This project only provides the client-side application.
 
-### Run the Server
+### 1. Build the Project
 
-In your terminal or Command Prompt, execute the `server_chat.py` file:
+Open the `Client-Chat.sln` solution file in Visual Studio. Build the solution (Build -> Build Solution) to compile the application.
 
-```bash
-python server_chat.py
-```
+### 2. Run the Client
 
-Once running, the server will display a message indicating it's listening for connections.
+After building, you can run the application directly from Visual Studio or navigate to the `Client-Chat/bin/Debug` (or `Release`) directory and run the `Client-Chat.exe` executable.
 
-### Run the Client
-
-In a new terminal window, run the `client_chat.py` file. You can do this multiple times to run more clients.
-
-```bash
-python client_chat.py
-```
-
-After running, you will be prompted to enter a username. Once you have done so, you can begin chatting.
+1.  **Enter Server IP and Port:** In the application window, enter the IP address and port of the chat server you wish to connect to.
+2.  **Click "Connect":** Click the "Connect" button to establish a connection with the server.
+3.  **Start Chatting:** Once connected, type your message in the text box and click "Send" to send it to the server and other connected clients.
 
 ## Notes
 
-*   If you plan to run the server and client on two separate computers, you'll need to change the server's IP Address in the `client_chat.py` file to the server's actual IP address.
-*   To exit the program, you can use Ctrl+C in the terminal.
+*   This project is the client-side component only. A separate server application is required for full chat functionality.
+*   To disconnect from the server, click the "Disconnect" button.
